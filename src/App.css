@@ -1,0 +1,72 @@
+
+.Header { 
+  display: flex;
+  height: 64px;
+  
+  position: relative;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 10%;
+
+  margin-bottom: 64px;
+  padding-left: 40px;
+
+  background-color: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24);
+}
+.Header_text { 
+  cursor: pointer;
+
+  padding: 20px;;
+  color: #ffff;
+
+}
+.Header_text:active {
+  background-color: #1E88E5;
+}
+.Content {
+  padding-left: 62px;
+  padding-right: 62px;
+}
+.CardImage { 
+  display: grid;
+  gap: 60px 0px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+.ImageBtn {
+  cursor: pointer;
+  position: absolute;
+  padding-top: 170px;
+  padding-left: 170px;
+
+}
+.Loading {
+  display:flex; 
+
+  margin-top: 32px;
+  margin-bottom: 32px;
+
+  justify-content:center;
+}
+
+.EmptyPage {
+  display:flex; 
+  justify-content:center; 
+  align-items:center;
+}
+
+#NotLike:not(:hover) {
+  transition: 2s;
+  -webkit-filter: saturate(0%);
+}
+#NotLike > #Like:hover {
+  transition: 1s;
+  fill:#FF3A00
+}
+#Image { 
+  width: 225px;
+  height: 225px;
+  background-image:url ;
+}
